@@ -10,7 +10,7 @@ pipeline {
 
         stage("Build"){
             steps {
-                sh "docker build -t product-service:${env.BUILD_NUMBER}"
+                sh "docker build -t product-service:${env.BUILD_NUMBER} ."
             }
         }
 
